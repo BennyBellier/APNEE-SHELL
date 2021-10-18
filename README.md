@@ -2,6 +2,8 @@
 
 # Programmation shell : Corbeille 
 
+## Sujet 
+
 L'objectif de cette APNEE est de réaliser un script implémentant un système de gestion de fichiers mis au rebus similaire à la corbeille présente dans la plupart des interfaces graphiques. Les différentes parties sont progressives et vous permettent de construire votre script de manière incrémentale. Pensez à conserver une copie de votre travail à chaque étape afin de pouvoir revenir dessus lors de vos révisions.
 
 Votre travail sera donc d'écrire un script corbeille qui évoluera pour implémenter les fonctionnalités suivantes :
@@ -22,3 +24,24 @@ Si plusieurs fichiers correspondent, il faudra donner le choix à l'utilisateur 
 4. votre script doit maintenant permettre de restaurer ou vider des fichiers effacés durant un certain intervalle de temps qui sera donné en option de la ligne de commande. Cet intervalle ne sera pas forcément fini (par exemple l'utilisateur devra pouvoir appliquer une opération aux fichiers effacés avant une certaine date sans limite d'ancienneté). Vous remarquerez que si un fichier est effacé plusieurs fois (effacé, recréé, puis effacé à nouveau), le contenu du fichier ne sera pas forcément le même selon l'intervalle de temps précisé par l'utilisateur. Vous gèrerez cette situation en conservant plusieurs versions distinctes d'un fichier effacé plusieurs fois.
 
 5. si nous supposons que les différentes versions d'un fichier effacé plusieurs fois ont un contenu qui varie peu, il est intéressant de ne stocker dans la corbeille que la différence entre les différentes versions. Implémentez cette solution. Quelle problème cette solution pose-t-elle en cas d'effacement d'une partie des versions ? Comment pouvez vous résoudre ce problème ?
+
+## To use it
+Clone the repository, and run with
+```
+./corbeille.sh [command] ...
+```
+If you didn't use it correctly an error will appear !
+
+## BE AWARE
+The programme will use your current directory, to us it, on all over your computer use this command :
+```
+mkdir $HOME/bin
+mv corbeille.sh $HOME/bin/
+mv corbeille_function.sh $HOME/bin/
+```
+Check that you are in the folder that contain "corbeille.sh" and "corbeille_function.sh".
+Then after that you are able to just run it with
+```
+corbeille [command] ...
+```
+in every directory.
