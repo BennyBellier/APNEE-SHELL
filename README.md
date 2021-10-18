@@ -2,7 +2,7 @@
 
 # Programmation shell : Corbeille 
 
-`L'objectif de cette APNEE est de réaliser un script implémentant un système de gestion de fichiers mis au rebus similaire à la corbeille présente dans la plupart des interfaces graphiques. Les différentes parties sont progressives et vous permettent de construire votre script de manière incrémentale. Pensez à conserver une copie de votre travail à chaque étape afin de pouvoir revenir dessus lors de vos révisions.`
+<span style="color:yellow">L'objectif de cette APNEE est de réaliser un script implémentant un système de gestion de fichiers mis au rebus similaire à la corbeille présente dans la plupart des interfaces graphiques. Les différentes parties sont progressives et vous permettent de construire votre script de manière incrémentale. Pensez à conserver une copie de votre travail à chaque étape afin de pouvoir revenir dessus lors de vos révisions.
 
 Votre travail sera donc d'écrire un script corbeille qui évoluera pour implémenter les fonctionnalités suivantes :
 1. Dans sa première version, le script **corbeille** devra déplacer tous les fichiers dont les noms lui seront donnés en arguments de la ligne de commande dans le répertoire **\$HOME/.corbeille** en créant au préalable ce répertoire s'il n'existe pas. Nous supposerons que les noms de fichier donnés sont absolus ou relatifs au répertoire courant. Attention, n'oubliez pas que les noms de fichier peuvent être quelconques et, par exemple, contenir des caractères particuliers (espace, ?, *, ...). D'après vous, pourquoi le nom du répertoire **\$HOME/.corbeille** comporte-t-il un point ? D'après vous, comment devez vous traiter le cas d'arguments qui ne correspondent pas à un nom de fichier ?
